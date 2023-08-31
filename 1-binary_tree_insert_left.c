@@ -43,7 +43,7 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 	/* If the new node's left child is not NULL, update its parent pointer */
 	if (new_left_child->left)
 		new_left_child->left->parent = new_left_child;
-	
+
 	/* Return the pointer to the new node */
 	return (new_left_child);
 }
